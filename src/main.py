@@ -12,6 +12,7 @@ class MyServer(BaseHTTPRequestHandler):
     """
 
     def get_html_page(self, page_name: str) -> str:
+        """ Возвращает страницу html, определенную параметром page_name. """
         with open(HTML_DIR / page_name, encoding='utf-8') as html_file:
             html_file = html_file.read()
         return html_file
@@ -24,9 +25,6 @@ class MyServer(BaseHTTPRequestHandler):
             page_content = self.get_html_page('contacts.html')
 
         self.send_response(200)
-        # if self.path.endswith('.css'):
-        #     self.send_header("Content-type", "text/css")
-        # else:
         self.send_header("Content-type", "text/html")  # Отправка типа данных, который будет передаваться
         self.end_headers()
 
