@@ -1,0 +1,53 @@
+
+
+.menu {
+    flex-grow: 1;
+    border-color: blueviolet;
+    border-top: 2px;
+    border-bottom: 2px;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu li:hover {
+    background-color: hwb(214 7% 13%);
+  }
+
+  .col-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+    border-color: aqua;
+    border-width: 5px;
+  }
+  
+  .inputAddress {
+    text-align: start;
+  }
